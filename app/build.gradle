@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace "com.tonetutor.app"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tonetutor.app"
+        minSdk 26
+        targetSdk 34
+        versionCode 2
+        versionName "0.2"
+    }
+
+    // Ensure consistent JVM targets for Kotlin and Java
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.4'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.activity:activity-compose:1.8.2'
+    implementation "androidx.compose.ui:ui:1.5.4"
+    implementation "androidx.compose.material3:material3:1.1.2"
+    implementation "androidx.navigation:navigation-compose:2.7.6"
+
+    // Material Components library for XML themes (fixes Theme.Material3.DayNight.NoActionBar)
+    implementation 'com.google.android.material:material:1.11.0'
+}
+
+// Optional: Enable AndroidX explicitly if not already in gradle.properties
+// android.useAndroidX=true
+// android.enableJetifier=true
