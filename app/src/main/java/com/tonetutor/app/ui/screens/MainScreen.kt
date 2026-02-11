@@ -9,7 +9,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
 
-// 👇 ADD THIS IMPORT
 import com.tonetutor.app.ui.screens.TutorDashboard
 
 @Composable
@@ -38,7 +37,8 @@ fun MainScreen() {
                 .padding(padding),
             contentAlignment = Alignment.Center
         ) {
-            TutorDashboard()
+            // 👇 FIX: Pass a lambda to the onOpenSettings parameter
+            TutorDashboard(onOpenSettings = { /* TODO: Implement settings navigation */ })
         }
     }
 }

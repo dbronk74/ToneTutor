@@ -9,110 +9,122 @@
 9        android:targetSdkVersion="34" />
 10
 11    <permission
-11-->[androidx.core:core:1.12.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/727d828c1086f269fe135177589b2814/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 12        android:name="com.tonetutor.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.12.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/727d828c1086f269fe135177589b2814/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.12.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/727d828c1086f269fe135177589b2814/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.tonetutor.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.12.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/727d828c1086f269fe135177589b2814/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.12.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/727d828c1086f269fe135177589b2814/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:4:5-17:19
+17-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:4:5-17:19
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.12.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/727d828c1086f269fe135177589b2814/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+18-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 19        android:debuggable="true"
 20        android:extractNativeLibs="false"
 21        android:label="ToneTutor"
-21-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:5:9-34
+21-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:5:9-34
 22        android:testOnly="true"
 23        android:theme="@style/Theme.ToneTutor" >
-23-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:6:9-47
+23-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:6:9-47
 24        <activity
-24-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:8:5-15:20
+24-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:8:5-15:20
 25            android:name="com.tonetutor.app.MainActivity"
-25-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:9:13-41
+25-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:9:13-41
 26            android:exported="true" >
-26-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:10:13-36
+26-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:10:13-36
 27            <intent-filter>
-27-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:11:13-14:29
+27-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:11:13-14:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:12:17-69
-28-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:12:25-66
+28-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:12:17-69
+28-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:12:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:13:17-77
-30-->/Users/macmini2/Desktop/ToneTutor26/app/src/main/AndroidManifest.xml:13:27-74
+30-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:13:17-77
+30-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:13:27-74
 31            </intent-filter>
 32        </activity>
-33
-34        <provider
-34-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
-35            android:name="androidx.startup.InitializationProvider"
-35-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
-36            android:authorities="com.tonetutor.app.androidx-startup"
-36-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
-37            android:exported="false" >
-37-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
-38            <meta-data
-38-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
-39                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-39-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
-40                android:value="androidx.startup" />
-40-->[androidx.emoji2:emoji2:1.4.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/ca369a786c4adeab74e72c684cafae10/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
-41            <meta-data
-41-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/f18c402fe58c2a8f0dc362d5ec71b895/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-42                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-42-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/f18c402fe58c2a8f0dc362d5ec71b895/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-43                android:value="androidx.startup" />
-43-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/f18c402fe58c2a8f0dc362d5ec71b895/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+33        <activity
+33-->[androidx.compose.ui:ui-tooling-android:1.7.3] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/c6e83480b5292fde611ef8c064c832e4/transformed/jetified-ui-tooling-release/AndroidManifest.xml:23:9-25:39
+34            android:name="androidx.compose.ui.tooling.PreviewActivity"
+34-->[androidx.compose.ui:ui-tooling-android:1.7.3] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/c6e83480b5292fde611ef8c064c832e4/transformed/jetified-ui-tooling-release/AndroidManifest.xml:24:13-71
+35            android:exported="true" />
+35-->[androidx.compose.ui:ui-tooling-android:1.7.3] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/c6e83480b5292fde611ef8c064c832e4/transformed/jetified-ui-tooling-release/AndroidManifest.xml:25:13-36
+36        <activity
+36-->[androidx.compose.ui:ui-test-manifest:1.7.3] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/adf04b68b40a371f1957c9696c5cea82/transformed/jetified-ui-test-manifest-1.7.3/AndroidManifest.xml:23:9-25:39
+37            android:name="androidx.activity.ComponentActivity"
+37-->[androidx.compose.ui:ui-test-manifest:1.7.3] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/adf04b68b40a371f1957c9696c5cea82/transformed/jetified-ui-test-manifest-1.7.3/AndroidManifest.xml:24:13-63
+38            android:exported="true" />
+38-->[androidx.compose.ui:ui-test-manifest:1.7.3] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/adf04b68b40a371f1957c9696c5cea82/transformed/jetified-ui-test-manifest-1.7.3/AndroidManifest.xml:25:13-36
+39
+40        <provider
+40-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:24:9-32:20
+41            android:name="androidx.startup.InitializationProvider"
+41-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:25:13-67
+42            android:authorities="com.tonetutor.app.androidx-startup"
+42-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:26:13-68
+43            android:exported="false" >
+43-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:27:13-37
 44            <meta-data
-44-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-45-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+44-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:29:13-31:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:30:17-78
 46                android:value="androidx.startup" />
-46-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-47        </provider>
-48
-49        <receiver
-49-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-50            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-50-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-51            android:directBootAware="false"
-51-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-52            android:enabled="true"
-52-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-53            android:exported="true"
-53-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-54            android:permission="android.permission.DUMP" >
-54-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-55            <intent-filter>
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-56                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-57            </intent-filter>
-58            <intent-filter>
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-59                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-60            </intent-filter>
+46-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/951a19a98a42686af12d9ccea09933d7/transformed/jetified-lifecycle-process-2.8.6/AndroidManifest.xml:31:17-49
+47            <meta-data
+47-->[androidx.emoji2:emoji2:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/cd02e75b1793ed4bd40c400484d263b5/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+48                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+48-->[androidx.emoji2:emoji2:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/cd02e75b1793ed4bd40c400484d263b5/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+49                android:value="androidx.startup" />
+49-->[androidx.emoji2:emoji2:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/cd02e75b1793ed4bd40c400484d263b5/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+50            <meta-data
+50-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+51                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+51-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+52                android:value="androidx.startup" />
+52-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+53        </provider>
+54
+55        <receiver
+55-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+56            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+56-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+57            android:directBootAware="false"
+57-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+58            android:enabled="true"
+58-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+59            android:exported="true"
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+60            android:permission="android.permission.DUMP" >
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
 61            <intent-filter>
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-62                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+62                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 63            </intent-filter>
 64            <intent-filter>
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-65                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/b22117ad1e335f05c4e4fb86233797a1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+65                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 66            </intent-filter>
-67        </receiver>
-68    </application>
-69
-70</manifest>
+67            <intent-filter>
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+68                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+69            </intent-filter>
+70            <intent-filter>
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+71                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/e25e11a1db5be943b31e16204345b9d8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+72            </intent-filter>
+73        </receiver>
+74    </application>
+75
+76</manifest>

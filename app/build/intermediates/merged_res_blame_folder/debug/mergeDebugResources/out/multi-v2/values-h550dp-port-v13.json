@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.tonetutor.app-mergeDebugResources-56:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.tonetutor.app-mergeDebugResources-64:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/9611ba5876896eeecdd1700d5d8874a5/transformed/material-1.11.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "/Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/48f548a97120ff34f4ba41a2a0b6451c/transformed/material-1.12.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

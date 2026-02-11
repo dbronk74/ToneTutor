@@ -25,6 +25,9 @@ import com.tonetutor.app.ui.components.OrbState
 import android.speech.tts.TextToSpeech
 import android.content.Context
 import androidx.compose.ui.platform.LocalContext
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import androidx.compose.runtime.rememberCoroutineScope  // Correct import (remove the kotlinx one)
 
 @Composable
 fun TutorDashboard(onOpenSettings: () -> Unit) {
@@ -34,7 +37,10 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
     var isSpeaking by remember { mutableStateOf(false) }
 
     val context = LocalContext.current
-    val tts = remember { TextToSpeech(context) { } }
+    val tts = remember { TextToSpeech(context) {} }
+
+    // Safe coroutine scope tied to the composable's lifecycle
+    val coroutineScope = rememberCoroutineScope()
 
     Box(
         modifier = Modifier
@@ -49,13 +55,13 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                "ToneTutor AI",
+                text = "ToneTutor AI",
                 color = Color(0xFFFFC107),
                 fontSize = 32.sp,
                 modifier = Modifier.padding(top = 32.dp)
             )
 
-            Spacer(Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
             AiOracle(
                 state = orbState,
@@ -63,7 +69,7 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 modifier = Modifier.size(200.dp)
             )
 
-            Spacer(Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
             BasicTextField(
                 value = prompt,
@@ -75,24 +81,29 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                     .padding(16.dp),
                 decorationBox = { innerTextField ->
                     if (prompt.isEmpty()) {
-                        Text("Describe your playing or goal...", color = Color.Gray)
+                        Text(
+                            text = "Describe your playing or goal...",
+                            color = Color.Gray
+                        )
                     }
                     innerTextField()
                 }
             )
 
-            Spacer(Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
             Button(
                 onClick = {
                     orbState = OrbState.ANALYZING
                     // Simulate AI response (replace with real analysis later)
-                    aiResponse = "Great tone! Work on alternate picking in pentatonic scales. Try this routine: 30 min scales, 20 min bends."
+                    aiResponse = "Great tone! Work on alternate picking in pentatonic scales. " +
+                            "Try this routine: 30 min scales, 20 min bends."
                     isSpeaking = true
                     tts.speak(aiResponse, TextToSpeech.QUEUE_FLUSH, null, null)
-                    // Reset after "speaking" (add real TTS callback for accuracy)
-                    kotlinx.coroutines.GlobalScope.launch {
-                        kotlinx.coroutines.delay(5000) // Placeholder delay
+
+                    // Safe coroutine launch - resets after placeholder delay
+                    coroutineScope.launch {
+                        delay(5000) // Placeholder - replace with real TTS completion listener later
                         isSpeaking = false
                         orbState = OrbState.IDLE
                     }
@@ -102,7 +113,7 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 Text("Analyze Playing")
             }
 
-            Spacer(Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
             if (aiResponse.isNotEmpty()) {
                 Card(
@@ -114,19 +125,22 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 ) {
                     Column {
                         Text(aiResponse, color = Color.White)
-                        Row(verticalAlignment = Alignment.CenterVertically) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.padding(8.dp)
+                        ) {
                             Switch(
-                                checked = true, // Placeholder
+                                checked = true, // Placeholder - make toggleable later
                                 onCheckedChange = { /* Toggle speak */ }
                             )
-                            Spacer(Modifier.width(8.dp))
+                            Spacer(modifier = Modifier.width(8.dp))
                             Text("Speak response", color = Color.LightGray)
                         }
                     }
                 }
             }
 
-            Spacer(Modifier.weight(1f))
+            Spacer(modifier = Modifier.weight(1f))
 
             TextButton(onClick = onOpenSettings) {
                 Text("Settings", color = Color.Gray)

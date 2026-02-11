@@ -5,7 +5,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.ExperimentalMaterial3Api // Import the annotation
 
+@OptIn(ExperimentalMaterial3Api::class) // Add this annotation
 @Composable
 fun SettingsScreen(onBack: () -> Unit) {
     Scaffold(
@@ -14,6 +16,8 @@ fun SettingsScreen(onBack: () -> Unit) {
                 title = { Text("Settings") },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
+                        // For a standard back arrow, it's better to use Icons.Auto.ArrowBack
+                        // but for simplicity, your original code is kept.
                         Text("←")
                     }
                 }

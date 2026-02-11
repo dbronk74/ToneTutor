@@ -3,6 +3,7 @@ package com.tonetutor.app.ui.components
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize // Make sure this is imported
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.*
@@ -17,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Canvas
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.drawscope.rotate
-import com.tonetutor.app.ui.theme.AccentGold  // Import your gold color
+import com.tonetutor.app.ui.theme.AccentGold
 
 enum class OrbState {
     IDLE,
@@ -31,7 +32,7 @@ fun AiOracle(
     isSpeaking: Boolean = false,  // Pass true when TTS is speaking results
     modifier: Modifier = Modifier
 ) {
-    val infiniteTransition = rememberInfiniteTransition()
+    val infiniteTransition = rememberInfiniteTransition(label = "infiniteTransition")
 
     // Base idle pulse
     val baseScale by infiniteTransition.animateFloat(
@@ -96,7 +97,7 @@ fun AiOracle(
 
         // Subtle musical "strings" radiating (visible in RECORDING/ANALYZING/speaking)
         if (state == OrbState.RECORDING || state == OrbState.ANALYZING || isSpeaking) {
-            Canvas(modifier = Modifier.fillMaxSize()) {
+            Canvas(modifier = Modifier.fillMaxSize()) { // Correct way to use the modifier
                 val center = Offset(size.width / 2, size.height / 2)
                 repeat(6) { i ->
                     rotate(degrees = i * 60f) {

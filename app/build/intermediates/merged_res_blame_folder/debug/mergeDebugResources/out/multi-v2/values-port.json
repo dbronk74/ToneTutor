@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.tonetutor.app-mergeDebugResources-56:/values-port/values-port.xml",
+            "outputFile": "com.tonetutor.app-mergeDebugResources-64:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/4574c9cddc9ff3abf2ff3fc198aa34bb/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "source": "/Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/1a1813bb7536fcbdd6585cf1320414e2/transformed/appcompat-1.7.0/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
