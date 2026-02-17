@@ -7,7 +7,7 @@ app/build/
 *.apk
 *.aab
 
-# Java heap dumps and profiler files (the culprit!)
+# Java heap dumps and profiler files (the main culprit!)
 *.hprof
 *.jfr
 
@@ -22,3 +22,7 @@ local.properties
 # Logs and temp files
 *.log
 *.tmp
+
+# Other common ignores
+.DS_Store
+Thumbs.db
