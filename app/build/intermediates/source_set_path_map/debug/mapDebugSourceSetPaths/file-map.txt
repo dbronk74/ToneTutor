@@ -60,10 +60,10 @@ com.tonetutor.app-navigation-runtime-2.8.0-58 /Users/macmini2/.gradle/caches/9.0
 com.tonetutor.app-jetified-activity-compose-1.9.2-59 /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/f47f459b1f22e4f8656e2a66ce4f33d4/transformed/jetified-activity-compose-1.9.2/res
 com.tonetutor.app-jetified-material-ripple-release-60 /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/f8a83803fea09713d19f06f82a120abc/transformed/jetified-material-ripple-release/res
 com.tonetutor.app-jetified-material3-release-61 /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/feedb7d38bfde20b477413b698d16fd3/transformed/jetified-material3-release/res
-com.tonetutor.app-resValues-62 /Users/macmini2/Desktop/ToneTutor_backup/app/build/generated/res/resValues/debug
-com.tonetutor.app-updated_navigation_xml-63 /Users/macmini2/Desktop/ToneTutor_backup/app/build/generated/updated_navigation_xml/debug
-com.tonetutor.app-packageDebugResources-64 /Users/macmini2/Desktop/ToneTutor_backup/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.tonetutor.app-packageDebugResources-65 /Users/macmini2/Desktop/ToneTutor_backup/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.tonetutor.app-debug-66 /Users/macmini2/Desktop/ToneTutor_backup/app/build/intermediates/merged_res/debug/mergeDebugResources
-com.tonetutor.app-debug-67 /Users/macmini2/Desktop/ToneTutor_backup/app/src/debug/res
-com.tonetutor.app-main-68 /Users/macmini2/Desktop/ToneTutor_backup/app/src/main/res
+com.tonetutor.app-resValues-62 /Users/macmini2/Desktop/ToneTutor_GOOD/app/build/generated/res/resValues/debug
+com.tonetutor.app-updated_navigation_xml-63 /Users/macmini2/Desktop/ToneTutor_GOOD/app/build/generated/updated_navigation_xml/debug
+com.tonetutor.app-packageDebugResources-64 /Users/macmini2/Desktop/ToneTutor_GOOD/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.tonetutor.app-packageDebugResources-65 /Users/macmini2/Desktop/ToneTutor_GOOD/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.tonetutor.app-debug-66 /Users/macmini2/Desktop/ToneTutor_GOOD/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.tonetutor.app-debug-67 /Users/macmini2/Desktop/ToneTutor_GOOD/app/src/debug/res
+com.tonetutor.app-main-68 /Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/res

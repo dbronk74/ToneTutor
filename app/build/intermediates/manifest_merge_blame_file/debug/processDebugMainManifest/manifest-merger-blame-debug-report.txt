@@ -20,31 +20,31 @@
 15-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:4:5-17:19
+17-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:4:5-17:19
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.13.1] /Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/719ffafe00ab417d1eb15bb3fe4c979f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 19        android:debuggable="true"
 20        android:extractNativeLibs="false"
 21        android:label="ToneTutor"
-21-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:5:9-34
+21-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:5:9-34
 22        android:testOnly="true"
 23        android:theme="@style/Theme.ToneTutor" >
-23-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:6:9-47
+23-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:6:9-47
 24        <activity
-24-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:8:5-15:20
+24-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:8:5-15:20
 25            android:name="com.tonetutor.app.MainActivity"
-25-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:9:13-41
+25-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:9:13-41
 26            android:exported="true" >
-26-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:10:13-36
+26-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:10:13-36
 27            <intent-filter>
-27-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:11:13-14:29
+27-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:11:13-14:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:12:17-69
-28-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:12:25-66
+28-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:12:17-69
+28-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:12:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:13:17-77
-30-->/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/AndroidManifest.xml:13:27-74
+30-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:13:17-77
+30-->/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/AndroidManifest.xml:13:27-74
 31            </intent-filter>
 32        </activity>
 33        <activity

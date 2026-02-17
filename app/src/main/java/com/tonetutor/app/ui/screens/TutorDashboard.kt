@@ -1,7 +1,6 @@
 package com.tonetutor.app.ui.screens
 
-import androidx.compose.animation.*
-import androidx.compose.animation.core.*
+import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -12,25 +11,21 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
-import androidx.compose.ui.draw.blur
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tonetutor.app.ui.components.AiOracle
 import com.tonetutor.app.ui.components.OrbState
-import android.speech.tts.TextToSpeech
-import android.content.Context
-import androidx.compose.ui.platform.LocalContext
+import com.tonetutor.app.ui.components.PulsingGuitar
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import androidx.compose.runtime.rememberCoroutineScope  // Correct import (remove the kotlinx one)
 
 @Composable
 fun TutorDashboard(onOpenSettings: () -> Unit) {
+
     var prompt by remember { mutableStateOf("") }
     var aiResponse by remember { mutableStateOf("") }
     var orbState by remember { mutableStateOf(OrbState.IDLE) }
@@ -38,8 +33,6 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
 
     val context = LocalContext.current
     val tts = remember { TextToSpeech(context) {} }
-
-    // Safe coroutine scope tied to the composable's lifecycle
     val coroutineScope = rememberCoroutineScope()
 
     Box(
@@ -47,6 +40,7 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
             .fillMaxSize()
             .background(Color.Black)
     ) {
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -54,35 +48,47 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
             Text(
                 text = "ToneTutor AI",
                 color = Color(0xFFFFC107),
                 fontSize = 32.sp,
-                modifier = Modifier.padding(top = 32.dp)
+                modifier = Modifier.padding(top = 24.dp),
+                textAlign = TextAlign.Center
             )
 
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
+            // ⭐ Pulsing Guitar Hero Visual
+            PulsingGuitar(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(220.dp)
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // AI Orb
             AiOracle(
                 state = orbState,
                 isSpeaking = isSpeaking,
                 modifier = Modifier.size(200.dp)
             )
 
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
+            // Input Field
             BasicTextField(
                 value = prompt,
                 onValueChange = { prompt = it },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clip(RoundedCornerShape(12.dp))
-                    .background(Color(0xFF222222))
+                    .background(Color(0xFF222222), RoundedCornerShape(12.dp))
                     .padding(16.dp),
                 decorationBox = { innerTextField ->
                     if (prompt.isEmpty()) {
                         Text(
-                            text = "Describe your playing or goal...",
+                            "Describe your playing or goal...",
                             color = Color.Gray
                         )
                     }
@@ -92,18 +98,21 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            // Analyze Button
             Button(
                 onClick = {
+
                     orbState = OrbState.ANALYZING
-                    // Simulate AI response (replace with real analysis later)
-                    aiResponse = "Great tone! Work on alternate picking in pentatonic scales. " +
-                            "Try this routine: 30 min scales, 20 min bends."
+
+                    aiResponse =
+                        "Great tone! Work on alternate picking in pentatonic scales. " +
+                                "Try this routine: 30 min scales, 20 min bends."
+
                     isSpeaking = true
                     tts.speak(aiResponse, TextToSpeech.QUEUE_FLUSH, null, null)
 
-                    // Safe coroutine launch - resets after placeholder delay
                     coroutineScope.launch {
-                        delay(5000) // Placeholder - replace with real TTS completion listener later
+                        delay(5000) // placeholder — replace with TTS listener later
                         isSpeaking = false
                         orbState = OrbState.IDLE
                     }
@@ -113,28 +122,46 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 Text("Analyze Playing")
             }
 
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
+            // Response Card
             if (aiResponse.isNotEmpty()) {
+
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .clip(RoundedCornerShape(16.dp))
-                        .background(Brush.verticalGradient(listOf(Color(0xFF333333), Color.Black)))
+                        .background(
+                            Brush.verticalGradient(
+                                listOf(Color(0xFF333333), Color.Black)
+                            ),
+                            RoundedCornerShape(16.dp)
+                        )
                         .padding(14.dp)
                 ) {
+
                     Column {
-                        Text(aiResponse, color = Color.White)
+
+                        Text(
+                            aiResponse,
+                            color = Color.White
+                        )
+
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
-                            modifier = Modifier.padding(8.dp)
+                            modifier = Modifier.padding(top = 8.dp)
                         ) {
+
                             Switch(
-                                checked = true, // Placeholder - make toggleable later
-                                onCheckedChange = { /* Toggle speak */ }
+                                checked = true,
+                                onCheckedChange = { }
                             )
+
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Speak response", color = Color.LightGray)
+
+                            Text(
+                                "Speak response",
+                                color = Color.LightGray
+                            )
                         }
                     }
                 }

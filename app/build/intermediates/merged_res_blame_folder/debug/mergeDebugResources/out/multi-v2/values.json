@@ -4,25 +4,6 @@
             "outputFile": "com.tonetutor.app-mergeDebugResources-64:/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/macmini2/Desktop/ToneTutor_backup/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "190"
-                    },
-                    "to": {
-                        "startLines": "6569",
-                        "startColumns": "4",
-                        "startOffsets": "462870",
-                        "endLines": "6571",
-                        "endColumns": "12",
-                        "endOffsets": "462968"
-                    }
-                },
-                {
                     "source": "/Users/macmini2/.gradle/caches/9.0-milestone-1/transforms/031352c368155971992f18ef97780daf/transformed/jetified-lifecycle-runtime-release/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -382,6 +363,25 @@
                         "endLines": "1844,1958,1959,1960,1961,1962,1963,1964,1965,1966,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,5558,5561",
                         "endColumns": "72,87,85,80,83,68,64,82,105,85,13,53,68,60,68,88,94,73,96,92,97,13,90,87,95,97,63,67,86,93,66,71,71,100,108,75,68,47,65,63,73,56,56,71,49,53,70,70,69,68,57,75,70,73,85,49,69,64,12,12",
                         "endOffsets": "123570,133498,133584,133665,133749,133818,133883,133966,134072,134158,134278,134332,134401,134462,134531,134620,134715,134789,134886,134979,135077,135226,135317,135405,135501,135599,135663,135731,135818,135912,135979,136051,136123,136224,136333,136409,136478,136526,136592,136656,136730,136787,136844,136916,136966,137020,137091,137162,137232,137301,137359,137435,137506,137580,137666,137716,137786,137851,392644,392797"
+                    }
+                },
+                {
+                    "source": "/Users/macmini2/Desktop/ToneTutor_GOOD/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "190"
+                    },
+                    "to": {
+                        "startLines": "6569",
+                        "startColumns": "4",
+                        "startOffsets": "462870",
+                        "endLines": "6571",
+                        "endColumns": "12",
+                        "endOffsets": "462968"
                     }
                 },
                 {
