@@ -1,15 +1,24 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Android Studio / Gradle build artifacts
+.gradle/
+build/
+app/build/
+*.class
+*.jar
+*.apk
+*.aab
+
+# Java heap dumps and profiler files (the culprit!)
+*.hprof
+*.jfr
+
+# Local config files (don't commit these)
 local.properties
+*.iml
+.idea/
+
+# macOS junk
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
