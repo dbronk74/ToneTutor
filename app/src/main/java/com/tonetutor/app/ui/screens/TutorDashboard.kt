@@ -3,10 +3,7 @@ package com.tonetutor.app.ui.screens
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -17,8 +14,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.tonetutor.app.ui.components.AiOracle
-import com.tonetutor.app.ui.components.OrbState
 import com.tonetutor.app.ui.components.PulsingGuitar
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -26,152 +21,160 @@ import kotlinx.coroutines.launch
 @Composable
 fun TutorDashboard(onOpenSettings: () -> Unit) {
 
-    var prompt by remember { mutableStateOf("") }
     var aiResponse by remember { mutableStateOf("") }
-    var orbState by remember { mutableStateOf(OrbState.IDLE) }
-    var isSpeaking by remember { mutableStateOf(false) }
 
     val context = LocalContext.current
     val tts = remember { TextToSpeech(context) {} }
-    val coroutineScope = rememberCoroutineScope()
+    val scope = rememberCoroutineScope()
 
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black)
+            .background(
+                Brush.verticalGradient(
+                    listOf(
+                        Color(0xFF020617),
+                        Color(0xFF0B2A5A),
+                        Color(0xFF020617)
+                    )
+                )
+            )
     ) {
 
         Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(16.dp),
+            modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
-            Text(
-                text = "ToneTutor AI",
-                color = Color(0xFFFFC107),
-                fontSize = 32.sp,
-                modifier = Modifier.padding(top = 24.dp),
-                textAlign = TextAlign.Center
-            )
+            // ===== TOP BUTTONS =====
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(10.dp))
 
-            // ⭐ Pulsing Guitar Hero Visual
-            PulsingGuitar(
+            Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(220.dp)
-            )
+                    .padding(horizontal = 20.dp),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                CircleButton("iRig")
+                CircleButton("Chat")
+                CircleButton("Settings") { onOpenSettings() }
+            }
+
+            // ===== HERO GUITAR =====
+            // anchored top, expanded downward
+
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(380.dp), // enlarged downward
+                contentAlignment = Alignment.TopCenter
+            ) {
+                PulsingGuitar(
+                    modifier = Modifier.fillMaxHeight()
+                )
+            }
+
+            // ===== MAIN CONTROL ROW =====
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // AI Orb
-            AiOracle(
-                state = orbState,
-                isSpeaking = isSpeaking,
-                modifier = Modifier.size(200.dp)
-            )
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            // Input Field
-            BasicTextField(
-                value = prompt,
-                onValueChange = { prompt = it },
+            Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFF222222), RoundedCornerShape(12.dp))
-                    .padding(16.dp),
-                decorationBox = { innerTextField ->
-                    if (prompt.isEmpty()) {
-                        Text(
-                            "Describe your playing or goal...",
-                            color = Color.Gray
-                        )
-                    }
-                    innerTextField()
-                }
-            )
+                    .padding(horizontal = 12.dp),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
 
-            Spacer(modifier = Modifier.height(16.dp))
+                CircleButton("Setup")
+                CircleButton("Analyze")
 
-            // Analyze Button
-            Button(
-                onClick = {
-
-                    orbState = OrbState.ANALYZING
-
-                    aiResponse =
-                        "Great tone! Work on alternate picking in pentatonic scales. " +
-                                "Try this routine: 30 min scales, 20 min bends."
-
-                    isSpeaking = true
+                RecordButton {
+                    aiResponse = "Great tone! Keep practicing phrasing."
                     tts.speak(aiResponse, TextToSpeech.QUEUE_FLUSH, null, null)
 
-                    coroutineScope.launch {
-                        delay(5000) // placeholder — replace with TTS listener later
-                        isSpeaking = false
-                        orbState = OrbState.IDLE
+                    scope.launch {
+                        delay(3500)
+                        aiResponse = ""
                     }
-                },
-                modifier = Modifier.fillMaxWidth(0.6f)
-            ) {
-                Text("Analyze Playing")
+                }
+
+                CircleButton("Tempo")
+                CircleButton("Library")
             }
 
-            Spacer(modifier = Modifier.height(24.dp))
+            // ===== SECONDARY BUTTON ROW =====
 
-            // Response Card
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                CircleButton("Studio")
+                CircleButton("Recordings")
+                CircleButton("Progress")
+            }
+
+            // ===== AI RESPONSE =====
+
             if (aiResponse.isNotEmpty()) {
+
+                Spacer(modifier = Modifier.height(10.dp))
 
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .background(
-                            Brush.verticalGradient(
-                                listOf(Color(0xFF333333), Color.Black)
-                            ),
-                            RoundedCornerShape(16.dp)
-                        )
-                        .padding(14.dp)
+                        .padding(horizontal = 16.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(0xAA000000)
+                    )
                 ) {
-
-                    Column {
-
-                        Text(
-                            aiResponse,
-                            color = Color.White
-                        )
-
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            modifier = Modifier.padding(top = 8.dp)
-                        ) {
-
-                            Switch(
-                                checked = true,
-                                onCheckedChange = { }
-                            )
-
-                            Spacer(modifier = Modifier.width(8.dp))
-
-                            Text(
-                                "Speak response",
-                                color = Color.LightGray
-                            )
-                        }
-                    }
+                    Text(
+                        aiResponse,
+                        color = Color.White,
+                        modifier = Modifier.padding(16.dp)
+                    )
                 }
             }
 
-            Spacer(modifier = Modifier.weight(1f))
-
-            TextButton(onClick = onOpenSettings) {
-                Text("Settings", color = Color.Gray)
-            }
+            Spacer(modifier = Modifier.height(12.dp))
         }
+    }
+}
+
+// ===== BUTTON COMPONENTS =====
+
+@Composable
+fun CircleButton(
+    label: String,
+    onClick: (() -> Unit)? = null
+) {
+    Surface(
+        shape = CircleShape,
+        color = Color(0x22000000),
+        modifier = Modifier.size(64.dp),
+        onClick = { onClick?.invoke() }
+    ) {
+        Box(contentAlignment = Alignment.Center) {
+            Text(
+                label,
+                color = Color.White,
+                fontSize = 10.sp,
+                textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+
+@Composable
+fun RecordButton(onClick: () -> Unit) {
+
+    FloatingActionButton(
+        onClick = onClick,
+        containerColor = Color(0xFFFFA726),
+        modifier = Modifier.size(72.dp)
+    ) {
+        Text("REC", color = Color.Black)
     }
 }
