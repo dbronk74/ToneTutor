@@ -1,36 +1,9 @@
-# ================================
-# Android / Gradle
-# ================================
 .gradle/
-**/build/
 local.properties
-
-# Compiled files
-*.class
-*.jar
-*.apk
-*.aab
-
-# Java / Kotlin crash dumps
-*.hprof
-*.jfr
-
-# ================================
-# Android Studio / IntelliJ
-# ================================
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# ================================
-# macOS
-# ================================
+/.idea
 .DS_Store
-
-# ================================
-# Logs and temp files
-# ================================
-*.log
-*.tmp
-Thumbs.db
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.iml

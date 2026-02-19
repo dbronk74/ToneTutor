@@ -1,8 +1,8 @@
 package com.tonetutor.app.ui.screens
 
 import android.speech.tts.TextToSpeech
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.offset
@@ -13,7 +13,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawWithCache
@@ -22,11 +21,13 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.tonetutor.app.R
 import com.tonetutor.app.ui.components.PulsingGuitar
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -46,9 +47,7 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            // Base blue fill ALWAYS covers entire screen
             .background(Color(0xFF0B2A5A))
-            // Single cohesive background stack (radial glow + vertical vignette)
             .drawWithCache {
                 val c = Offset(size.width / 2f, size.height / 2f)
 
@@ -72,13 +71,11 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 )
 
                 onDrawBehind {
-                    // base already painted by .background(...)
                     drawRect(radial)
                     drawRect(vertical)
                 }
             }
     ) {
-        // Optional extra glow (keep if you like the aura; reduce alpha if too strong)
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
@@ -93,7 +90,7 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
 
         Column(modifier = Modifier.fillMaxSize()) {
 
-            // TOP ROW (glass icon pucks + labels below)
+            // TOP ROW
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -102,27 +99,27 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                GlassPuckWithLabel(
+                PuckWithLabel(
                     iconId = PuckIcon.Chat,
                     label = "Chat",
                     onClick = { /* TODO */ }
                 )
 
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                    GlassPuckWithLabel(
+                    PuckWithLabel(
                         iconId = PuckIcon.IRig,
                         label = "iRig",
                         onClick = { /* TODO */ }
                     )
-                    GlassPuckWithLabel(
+                    PuckWithLabel(
                         iconId = PuckIcon.Settings,
-                        label = "Set",
+                        label = "Settings",
                         onClick = onOpenSettings
                     )
                 }
             }
 
-            // HERO (guitar larger)
+            // HERO
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -148,8 +145,9 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                GlassPuckWithLabel(iconId = PuckIcon.Setup, label = "Setup")
-                GlassPuckWithLabel(
+                PuckWithLabel(iconId = PuckIcon.Setup, label = "Setup")
+
+                PuckWithLabel(
                     iconId = PuckIcon.Analyze,
                     label = "Analyze",
                     onClick = {
@@ -158,13 +156,13 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
                         scope.launch { delay(1200) }
                     }
                 )
-                GlassPuckWithLabel(iconId = PuckIcon.Record, label = "Record")
-                GlassPuckWithLabel(iconId = PuckIcon.Tempo, label = "Tempo")
-                GlassPuckWithLabel(iconId = PuckIcon.Library, label = "Library")
+
+                PuckWithLabel(iconId = PuckIcon.Record, label = "Record")
+                PuckWithLabel(iconId = PuckIcon.Tempo, label = "Tempo")
+                PuckWithLabel(iconId = PuckIcon.Library, label = "Library")
             }
         }
 
-        // Optional AI response overlay
         if (aiResponse.isNotBlank()) {
             Card(
                 modifier = Modifier
@@ -181,7 +179,6 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
             }
         }
 
-        // Text nav row only (Studio / Recordings / Progress)
         Row(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
@@ -198,12 +195,12 @@ fun TutorDashboard(onOpenSettings: () -> Unit) {
     }
 }
 
-private enum class PuckIcon {
+enum class PuckIcon {
     Chat, IRig, Settings, Setup, Analyze, Record, Tempo, Library
 }
 
 @Composable
-private fun GlassPuckWithLabel(
+private fun PuckWithLabel(
     iconId: PuckIcon,
     label: String,
     puckSize: Dp = 62.dp,
@@ -213,25 +210,21 @@ private fun GlassPuckWithLabel(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.widthIn(min = puckSize)
     ) {
-        val puckModifier = Modifier
-            .size(puckSize)
-            .clip(CircleShape)
-            .background(Color.White.copy(alpha = 0.10f))
-            .border(1.dp, Color.White.copy(alpha = 0.22f), CircleShape)
-            .then(if (onClick != null) Modifier.clickable { onClick() } else Modifier)
+        val clickableMod = if (onClick != null) Modifier.clickable { onClick() } else Modifier
 
+        // Use the PNG as the entire puck (no tint, no extra glass circle)
         Box(
-            modifier = puckModifier,
+            modifier = Modifier
+                .size(puckSize)
+                .clip(CircleShape)
+                .then(clickableMod),
             contentAlignment = Alignment.Center
         ) {
-            Box(
-                modifier = Modifier
-                    .matchParentSize()
-                    .blur(12.dp)
-                    .background(Color.White.copy(alpha = 0.06f), CircleShape)
+            Image(
+                painter = painterResource(id = puckDrawable(iconId)),
+                contentDescription = label,
+                modifier = Modifier.fillMaxSize()
             )
-
-            PuckIconGlyph(iconId)
         }
 
         Spacer(Modifier.height(6.dp))
@@ -247,24 +240,17 @@ private fun GlassPuckWithLabel(
     }
 }
 
-@Composable
-private fun PuckIconGlyph(iconId: PuckIcon) {
-    val glyph = when (iconId) {
-        PuckIcon.Chat -> "◔"
-        PuckIcon.IRig -> "⌁"
-        PuckIcon.Settings -> "⦿"
-        PuckIcon.Setup -> "◈"
-        PuckIcon.Analyze -> "▵"
-        PuckIcon.Record -> "●"
-        PuckIcon.Tempo -> "⏱"
-        PuckIcon.Library -> "♫"
-    }
+private fun puckDrawable(iconId: PuckIcon): Int {
+    return when (iconId) {
+        PuckIcon.Chat -> R.drawable.ic_chat
+        PuckIcon.Analyze -> R.drawable.ic_analyze
+        PuckIcon.Record -> R.drawable.ic_record
+        PuckIcon.Tempo -> R.drawable.ic_tempo
+        PuckIcon.Library -> R.drawable.ic_library
+        PuckIcon.Settings -> R.drawable.ic_settings
 
-    Text(
-        text = glyph,
-        color = Color.White,
-        fontSize = 22.sp,
-        fontWeight = FontWeight.Bold,
-        modifier = Modifier.alpha(0.95f)
-    )
+        // ✅ Now that you've installed these:
+        PuckIcon.Setup -> R.drawable.ic_setup
+        PuckIcon.IRig -> R.drawable.ic_irig
+    }
 }

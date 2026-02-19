@@ -1,8 +1,12 @@
 package com.tonetutor.app.ui.navigation
 
-import androidx.compose.runtime.*
-import androidx.compose.material3.*
-import com.tonetutor.app.ui.screens.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import com.tonetutor.app.ui.screens.SettingsScreen
+import com.tonetutor.app.ui.screens.TutorDashboard
 
 enum class Screen { HOME, SETTINGS }
 
@@ -11,10 +15,12 @@ fun NavigationRoot() {
     var currentScreen by remember { mutableStateOf(Screen.HOME) }
 
     when (currentScreen) {
-        Screen.HOME ->
-            TutorDashboard { currentScreen = Screen.SETTINGS }
+        Screen.HOME -> TutorDashboard(
+            onOpenSettings = { currentScreen = Screen.SETTINGS }
+        )
 
-        Screen.SETTINGS ->
-            SettingsScreen { currentScreen = Screen.HOME }
+        Screen.SETTINGS -> SettingsScreen(
+            onBack = { currentScreen = Screen.HOME }
+        )
     }
 }

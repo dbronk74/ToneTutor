@@ -1,0 +1,214 @@
+[
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_analyze.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxhdpi/ic_analyze.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_chat.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxhdpi/ic_chat.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-hdpi_ic_settings.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-hdpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-hdpi_ic_library.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-hdpi/ic_library.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_record.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_record.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-hdpi_ic_irig.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-hdpi/ic_irig.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable_tonetutor_guitar_lighter_3_lighter.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable/tonetutor_guitar_lighter_3_lighter.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_settings.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-mdpi_ic_library.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-mdpi/ic_library.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-ldpi_ic_chat.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-ldpi/ic_chat.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_tempo.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_tempo.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-mdpi_ic_record.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-mdpi/ic_record.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-mdpi_ic_irig.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-mdpi/ic_irig.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-ldpi_ic_analyze.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-ldpi/ic_analyze.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-hdpi_ic_setup.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-hdpi/ic_setup.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable_les_paul_circuit.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable/les_paul_circuit.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xhdpi_ic_settings.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-mdpi_ic_settings.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-mdpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-ldpi_ic_settings.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-ldpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable_tonetutor_guitar_lighter_2_lgter.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable/tonetutor_guitar_lighter_2_lgter.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_library.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxhdpi/ic_library.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_record.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxhdpi/ic_record.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable_tonetutor_guitar_lighter_4_lightest.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable/tonetutor_guitar_lighter_4_lightest.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_irig.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_irig.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-ldpi_ic_record.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-ldpi/ic_record.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xhdpi_ic_chat.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xhdpi/ic_chat.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xhdpi_ic_library.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xhdpi/ic_library.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xhdpi_ic_record.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xhdpi/ic_record.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-hdpi_ic_record.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-hdpi/ic_record.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-hdpi_ic_tempo.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-hdpi/ic_tempo.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_library.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_library.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-hdpi_ic_chat.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-hdpi/ic_chat.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_chat.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_chat.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-ldpi_ic_setup.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-ldpi/ic_setup.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_irig.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-xxhdpi/ic_irig.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-xhdpi_ic_setup.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-xhdpi/ic_setup.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-ldpi_ic_library.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-ldpi/ic_library.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-hdpi_ic_analyze.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-hdpi/ic_analyze.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xhdpi_ic_tempo.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xhdpi/ic_tempo.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-ldpi_ic_irig.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-ldpi/ic_irig.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-mdpi_ic_tempo.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-mdpi/ic_tempo.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-mdpi_ic_setup.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-mdpi/ic_setup.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_tempo.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxhdpi/ic_tempo.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-mdpi_ic_chat.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-mdpi/ic_chat.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-mdpi_ic_analyze.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-mdpi/ic_analyze.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable_tonetutor_guitar_lighter_1_drk.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable/tonetutor_guitar_lighter_1_drk.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xhdpi_ic_analyze.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xhdpi/ic_analyze.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-xhdpi_ic_irig.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-xhdpi/ic_irig.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-xxhdpi_ic_setup.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-xxhdpi/ic_setup.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-ldpi_ic_tempo.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-ldpi/ic_tempo.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_settings.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_analyze.png.flat",
+        "source": "/Users/macmini2/.gradle/daemon/9.0-milestone-1/com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_analyze.png"
+    },
+    {
+        "merged": "com.tonetutor.app-debug-66:/drawable-xxxhdpi_ic_setup.png.flat",
+        "source": "com.tonetutor.app-main-68:/drawable-xxxhdpi/ic_setup.png"
+    }
+]

@@ -1,0 +1,28 @@
+# Android Studio / Gradle build artifacts
+.gradle/
+build/
+app/build/
+*.class
+*.jar
+*.apk
+*.aab
+
+# Java heap dumps and profiler files (the main culprit!)
+*.hprof
+*.jfr
+
+# Local config files (don't commit these)
+local.properties
+*.iml
+.idea/
+
+# macOS junk
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Other common ignores
+.DS_Store
+Thumbs.db

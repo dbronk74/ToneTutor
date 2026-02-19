@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_analyze
+drawable ic_chat
+drawable ic_irig
+drawable ic_library
+drawable ic_record
+drawable ic_settings
+drawable ic_setup
+drawable ic_tempo
+drawable les_paul_circuit
+drawable tonetutor_guitar_lighter_1_drk
+drawable tonetutor_guitar_lighter_2_lgter
+drawable tonetutor_guitar_lighter_3_lighter
+drawable tonetutor_guitar_lighter_4_lightest
+style Theme.ToneTutor
