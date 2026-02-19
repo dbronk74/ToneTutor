@@ -1,28 +1,36 @@
-# Android Studio / Gradle build artifacts
+# ================================
+# Android / Gradle
+# ================================
 .gradle/
-build/
-app/build/
+**/build/
+local.properties
+
+# Compiled files
 *.class
 *.jar
 *.apk
 *.aab
 
-# Java heap dumps and profiler files (the main culprit!)
+# Java / Kotlin crash dumps
 *.hprof
 *.jfr
 
-# Local config files (don't commit these)
-local.properties
-*.iml
+# ================================
+# Android Studio / IntelliJ
+# ================================
 .idea/
+*.iml
+*.ipr
+*.iws
 
-# macOS junk
+# ================================
+# macOS
+# ================================
 .DS_Store
 
+# ================================
 # Logs and temp files
+# ================================
 *.log
 *.tmp
-
-# Other common ignores
-.DS_Store
 Thumbs.db
