@@ -1,8 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-drawable les_paul_circuit
-drawable tonetutor_guitar_lighter_1_drk
-drawable tonetutor_guitar_lighter_2_lgter
-drawable tonetutor_guitar_lighter_3_lighter
-drawable tonetutor_guitar_lighter_4_lightest
-style Theme.ToneTutor
