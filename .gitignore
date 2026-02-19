@@ -7,3 +7,11 @@ local.properties
 .externalNativeBuild
 .cxx
 *.iml
+
+# Large dumps / profiling
+*.hprof
+*.log
+
+# Android build
+**/build/
+.gradle/
